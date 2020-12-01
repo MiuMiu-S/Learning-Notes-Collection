@@ -1,6 +1,6 @@
 ## js经典面试题-连续赋值运算
 
-今天看技术群里谈论连续赋值运算的问题，justjavac直接拿出了十年前的[文章](https://justjavac.com/javascript/2012/04/05/javascript-continuous-assignment-operator.html）10年前就有研究，在这里分享下我的理解：
+今天看技术群里谈论连续赋值运算的问题，justjavac直接拿出了十年前的[文章](https://justjavac.com/javascript/2012/04/05/javascript-continuous-assignment-operator.html),10年前就有研究，在这里分享下我的理解：
 #### 一. 两个顺序问题
 1. js的代码（不考虑变量提升、异步操作），它的执行顺序是从上倒下，从左到右的，一行一行的执行的。
 2. 赋值运算有以下两种形式：
