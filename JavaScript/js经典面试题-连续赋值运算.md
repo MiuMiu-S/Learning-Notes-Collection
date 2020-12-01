@@ -1,3 +1,5 @@
+## js经典面试题-连续赋值运算
+
 今天看技术群里谈论连续赋值运算的问题，justjavac直接拿出了十年前的[文章](https://justjavac.com/javascript/2012/04/05/javascript-continuous-assignment-operator.html）10年前就有研究，在这里分享下我的理解：
 #### 一. 两个顺序问题
 1. js的代码（不考虑变量提升、异步操作），它的执行顺序是从上倒下，从左到右的，一行一行的执行的。
@@ -32,7 +34,7 @@ a.x = a; // 创建x属性，并将x属性存入a的指针0x0012ffd
 因此b一直指向指针0x0012ffc的地址，所以打印的结果很好理解。
 a有x属性，x属性指向a，一直循环。因此console.log(1,a);console.log(2,a.x);打印出来是循环引用的样子。
 ```
-![1](./../img/image1.png)
+![./../img/image1.png](./../img/image1.png)
 
 #### 第二题：
 ```
@@ -54,4 +56,4 @@ console.log(1, a); // 打印时候先找a的指针，指向为0x0012ffd {n:2},�
 console.log(2, a.x); // 打印时候先找a的指针，指向为0x0012ffd {n:2},不包含a的属性，因此打印为undefined。
 console.log(3,b); // 打印时候先找b的指针，指向为0x0012ffc,如下图，因此打印为{n: 1, x: { n: 2 }}
 ```
-![2](./../img/image2.png)
+![./../img/image2.png](./../img/image2.png)
