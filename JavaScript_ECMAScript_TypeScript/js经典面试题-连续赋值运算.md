@@ -1,3 +1,5 @@
+2020-11
+
 ## js经典面试题-连续赋值运算
 
 今天看技术群里谈论连续赋值运算的问题，justjavac直接拿出了十年前的[文章](https://justjavac.com/javascript/2012/04/05/javascript-continuous-assignment-operator.html),10年前就有研究，在这里分享下我的理解：
